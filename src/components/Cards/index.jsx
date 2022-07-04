@@ -42,7 +42,7 @@ export default function SocialProfileSimple({
           {title}
         </Heading>
         <Text
-          noOfLines={6}
+          noOfLines={5}
           mt={4}
           textAlign={"center"}
           color={useColorModeValue("whiteAlpha.900", "gray.400")}

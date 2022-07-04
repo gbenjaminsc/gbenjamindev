@@ -20,6 +20,7 @@ import {
         rounded={'full'}
         w={8}
         h={8}
+        target={'_blank'}
         cursor={'pointer'}
         as={'a'}
         href={href}
@@ -52,10 +53,10 @@ import {
           align={{ base: 'center', md: 'center' }}>
           <Text>© Construído por Gabriel Benjamin - 2022 - Todos os direitos Reservados</Text>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Twitter'} onclick={()=> window.open('https://github.com/gbenjaminsc', '_blank')}>
-              <FaGithub />
+            <SocialButton label={'Github'} href={'https://github.com/gbenjaminsc'}>
+              <FaGithub  />
             </SocialButton>
-            <SocialButton label={'Linkedin'} onclick={()=> window.open("https://www.linkedin.com/in/gbenjamin-1/", '_blank')}>
+            <SocialButton label={'Linkedin'} href={"https://www.linkedin.com/in/gbenjamin-1/"}>
               <FaLinkedin />
             </SocialButton>
           </Stack>
