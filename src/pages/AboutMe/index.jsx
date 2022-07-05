@@ -1,4 +1,4 @@
-import { Box, Text, Image } from "@chakra-ui/react";
+import { Box, Text, Image, Heading } from "@chakra-ui/react";
 import figma from "../../assets/320px-Figma-logo.svg.png";
 import git from "../../assets/Git-logo.svg";
 import vscode from "../../assets/480px-Visual_Studio_Code_1.35_icon.svg.png";
@@ -8,15 +8,15 @@ export default function SobreMim() {
     <Box
       id="sobre"
       mt={10}
-      h={964}
+      mb={20}
       display={"flex"}
       flexDirection={"column"}
       alignItems={"center"}
     >
-      <Text fontSize={45} color={"blue.900"}>
+      <Heading fontSize={45} color={"blue.900"}>
         Sobre Mim
-      </Text>
-      <Box mt={10} display={"flex"} flexDirection={"column"}>
+      </Heading>
+      <Box padding={5} mt={10} display={"flex"} flexDirection={"column"}>
         <Box display={"flex"} alignItems={"center"} textAlign={"start"} mt={10}>
           <Text
             fontSize={21}
@@ -55,7 +55,7 @@ export default function SobreMim() {
           >
             Atualmente sou monitor(Peer Coach) na Kenzie ajudando os alunos do
             módulo 1 e estou buscando melhorar cada vez mais profissionalmente.
-            Alguns hobbies que tenho é ver meu time jogar, me divertir com
+            Alguns hobbies que tenho é ver meu time jogar, sair com minha namorada, me divertir com
             amigos e jogar alguns jogos no PC.
           </Text>
           <Image w={200} src={git}></Image>

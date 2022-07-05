@@ -16,14 +16,13 @@ export default function SocialProfileSimple({
   github,
   image,
 }) {
-  console.log("a");
   return (
     <Center py={6}>
       <Box
         maxW={"320px"}
         w={"full"}
         bg={"blue.900"}
-        boxShadow={"2xl"}
+        boxShadow={"lg"}
         rounded={"lg"}
         p={4}
         textAlign={"center"}
@@ -57,8 +56,11 @@ export default function SocialProfileSimple({
             flex={1}
             fontSize={"sm"}
             rounded={"full"}
-            _focus={{
-              bg: "whiteAlpha.900",
+            bg={"whiteAlpha.900"}
+            color={"blue.900"}
+            _hover={{
+              bg: "blue.500",
+              color:"whiteAlpha.900"
             }}
           >
             GitHub
@@ -72,9 +74,7 @@ export default function SocialProfileSimple({
             color={"blue.900"}
             _hover={{
               bg: "blue.500",
-            }}
-            _focus={{
-              bg: "blue.500",
+              color:"whiteAlpha.900"
             }}
           >
             Site

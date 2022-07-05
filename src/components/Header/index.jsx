@@ -2,9 +2,9 @@ import {
   Box,
   Flex,
   HStack,
-  Link,
   IconButton,
   Button,
+  Link,
   Menu,
   MenuButton,
   MenuList,
@@ -26,7 +26,7 @@ const Links = [
 
 const NavLink = ({ children , id}) => (
   <Link
-    fontSize={30}
+    fontSize={25}
     px={10}
     color={useColorModeValue("whiteAlpha.900", "whiteAlpha.700")}
     py={1}
@@ -51,6 +51,7 @@ export default function Simple() {
         borderBottom={"1px solid white"}
         bg={useColorModeValue("blue.900", "blue.900")}
         px={4}
+        scrollBehavior={'smooth'}
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
@@ -66,7 +67,7 @@ export default function Simple() {
             justifyContent={"center"}
             width={"full"}
           >
-            <HStack
+            <HStack 
               as={"nav"}
               spacing={20}
               display={{ base: "none", md: "flex" }}
@@ -98,8 +99,8 @@ export default function Simple() {
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+              {Links.map(({nome, id}) => (
+                <NavLink key={nome} id={id}>{nome}</NavLink>
               ))}
             </Stack>
           </Box>

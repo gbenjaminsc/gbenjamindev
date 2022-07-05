@@ -1,22 +1,27 @@
-import './App.css';
-import Simple from './components/Header';
-import Inicio from './components/Início';
-import Projetos from './components/Projetos';
-import Skills from './components/Skills';
-import SobreMim from './components/SobreMim';
-import SmallWithSocial from './components/Contato';
-import { Box } from '@chakra-ui/react';
+import "./App.css";
+import Simple from "./components/Header";
+import Inicio from "./pages/Start";
+import Projetos from "./pages/Projects";
+import Skills from "./pages/Skills";
+import SobreMim from "./pages/AboutMe";
+import SmallWithSocial from "./components/Footer";
+import { Flex } from "@chakra-ui/react";
+import ContactFormWithSocialButtons from "./pages/Contact";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
-    <Box scrollBehavior={'smooth'}>
+    <Flex direction={"column"} scrollBehavior={"smooth"}>
       <Simple></Simple>
       <Inicio></Inicio>
       <SobreMim></SobreMim>
       <Skills></Skills>
       <Projetos></Projetos>
+      <ContactFormWithSocialButtons></ContactFormWithSocialButtons>
       <SmallWithSocial></SmallWithSocial>
-    </Box>
+      <ToastContainer />
+    </Flex>
   );
 }
 
