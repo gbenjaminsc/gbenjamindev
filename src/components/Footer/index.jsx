@@ -53,7 +53,7 @@ export default function SmallWithSocial() {
       >
         <Text>
           © Construído por Gabriel Benjamin - 2022 - Todos os direitos
-          Reservados
+          reservados
         </Text>
         <Stack direction={"row"} spacing={6}>
           <SocialButton

@@ -26,7 +26,7 @@ const Links = [
 
 const NavLink = ({ children , id}) => (
   <Link
-    fontSize={25}
+    fontSize={20}
     px={10}
     color={useColorModeValue("whiteAlpha.900", "whiteAlpha.700")}
     py={1}
@@ -62,14 +62,13 @@ export default function Simple() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack
-            spacing={8}
             alignItems={"center"}
             justifyContent={"center"}
             width={"full"}
           >
             <HStack 
               as={"nav"}
-              spacing={20}
+              spacing={2}
               display={{ base: "none", md: "flex" }}
             >
               {Links.map(({nome, id}) => (

@@ -1,4 +1,4 @@
-import { Wrap, Box, WrapItem, Heading, Text } from "@chakra-ui/react";
+import { Wrap, Box, WrapItem, Heading, Text,  } from "@chakra-ui/react";
 import {
   IoLogoJavascript,
   IoLogoReact,
@@ -29,13 +29,13 @@ export default function Skills() {
         Skills
       </Heading>
       <Wrap
-        mt={20}
-        ml={5}
-        mb={10}
-        flexWrap={"wrap"}
-        maxW={1000}
-        spacing={100}
-        alignSelf={"center"}
+      mt={10}
+      mb={10}
+      flexWrap={'wrap'}
+      align={'center'}
+      justify={'center'}
+      maxW={1000}
+      spacing={100}
       >
         <WrapItem
           padding={2}

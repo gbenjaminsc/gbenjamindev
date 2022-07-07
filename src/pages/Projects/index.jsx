@@ -11,7 +11,7 @@ export default function Projetos() {
       <Heading mt={10} fontSize={45} color={"blue.900"}>
         Projetos
       </Heading>
-      <Wrap id="projetos" spacing={10} justify={"center"} mt={10} maxW={1200}>
+      <Wrap id="projetos" spacing={10} justify={"center"} mt={10} maxW={1200} padding={2}>
         {Projects.map(({ title, description, link, github, image }, index) => {
           return (
             <WrapItem key={index}>

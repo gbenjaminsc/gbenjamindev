@@ -19,7 +19,7 @@ export default function Inicio() {
       bg={"blue.900"}
       h={1024}
     >
-        <Wrap ml={{ base: 0, sm: 100 }} spacing={{ base: 350, sm: 100 }}>
+        <Wrap align={'center'} justify={'center'} spacing={100}>
           <WrapItem
             display={"flex"}
             flexDirection={"column"}
