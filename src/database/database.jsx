@@ -36,7 +36,7 @@ export const Projects = [
     {
         title: "KenzieFood",
         description: "KenzieFood é um app que simula um e-commerce de restaurante. O projeto realizado como atividade avaliativa final do módulo 2 de Front-End da Kenzie. ",
-        link: "https://react-entrega-s2-kenzie-hub-gbenjaminsc.vercel.app/",
+        link: "https://api-kenziefood-m2-discacciati.vercel.app/",
         github: "https://github.com/gbenjaminsc/api-kenziefood-m2-discacciati",
         image: kenziefood
     }
